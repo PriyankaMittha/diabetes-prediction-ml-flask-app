@@ -75,7 +75,7 @@ diabetes-prediction-ml-flask-app
 ├── app.py
 ├── requirements.txt
 └── README.md
-
+```
 
 ## Running the Project Locally
 
