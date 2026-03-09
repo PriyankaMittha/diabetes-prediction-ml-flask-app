@@ -56,25 +56,25 @@ Outcome
 
 ## Project Structure
 
-diabetes_prediction_project
-
-Model
-- modelForPrediction.pkl
-- StandardScaler.pkl
-
-Notebook
-- model_training.ipynb
-
-templates
-- home.html
-- single_prediction.html
-
-dataset
-- diabetes.csv
-
-app.py  
-requirements.txt  
-README.md
+diabetes-prediction-ml-flask-app
+│
+├── Model
+│   ├── modelForPrediction.pkl
+│   └── StandardScaler.pkl
+│
+├── dataset
+│   └── diabetes.csv
+│
+├── Notebook
+│   └── model_training.ipynb
+│
+├── templates
+│   ├── home.html
+│   └── single_prediction.html
+│
+├── app.py
+├── requirements.txt
+└── README.md
 
 ## Running the Project Locally
 
