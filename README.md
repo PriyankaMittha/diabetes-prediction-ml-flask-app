@@ -5,6 +5,7 @@ This project is an end-to-end Machine Learning application that predicts whether
 ## Project Overview
 
 The goal of this project is to build a machine learning pipeline that:
+
 - Preprocesses medical data
 - Trains a classification model
 - Saves the trained model and scaler
@@ -14,7 +15,7 @@ Users can enter health parameters through a web interface and receive a predicti
 
 ## Dataset
 
-The dataset used is the **Pima Indians Diabetes Dataset**.
+The dataset used is the Pima Indians Diabetes Dataset.
 
 Features used for prediction:
 
@@ -28,7 +29,10 @@ Features used for prediction:
 - Age
 
 Target Variable:
-- Outcome (0 = Non-Diabetic, 1 = Diabetic)
+
+Outcome  
+0 = Non-Diabetic  
+1 = Diabetic
 
 ## Technologies Used
 
@@ -38,15 +42,80 @@ Target Variable:
 - Scikit-learn
 - Flask
 - HTML
+- Pickle
 
 ## Machine Learning Workflow
 
-1. Data Collection
-2. Data Preprocessing
-3. Feature Scaling (StandardScaler)
-4. Model Training (Logistic Regression)
-5. Model Evaluation
-6. Model Serialization using Pickle
-7. Deployment with Flask
+1 Data Collection  
+2 Data Preprocessing  
+3 Feature Scaling using StandardScaler  
+4 Model Training using Logistic Regression  
+5 Model Evaluation  
+6 Model Serialization using Pickle  
+7 Deployment with Flask
 
 ## Project Structure
+
+diabetes_prediction_project
+
+Model
+- modelForPrediction.pkl
+- StandardScaler.pkl
+
+Notebook
+- model_training.ipynb
+
+templates
+- home.html
+- single_prediction.html
+
+dataset
+- diabetes.csv
+
+app.py  
+requirements.txt  
+README.md
+
+## Running the Project Locally
+
+Clone the repository
+
+git clone https://github.com/PriyankaMittha/diabetes-prediction-ml-flask-app.git
+
+Navigate to project folder
+
+cd diabetes-prediction-ml-flask-app
+
+Install dependencies
+
+pip install -r requirements.txt
+
+Run the Flask application
+
+python app.py
+
+Open browser and go to
+
+http://127.0.0.1:5000
+
+## Web Application
+
+The web interface allows users to input medical details and get a prediction whether the person is diabetic or not.
+
+## Future Improvements
+
+- Add more advanced ML models
+- Improve UI design
+- Add model monitoring
+- Deploy using cloud platforms
+- Convert the project into a full ML pipeline
+
+## Author
+
+Priyanka Mittha
+
+GitHub  
+https://github.com/PriyankaMittha
+
+LinkedIn  
+https://www.linkedin.com/in/priyanka-mittha
