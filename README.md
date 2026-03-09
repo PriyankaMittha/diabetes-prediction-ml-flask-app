@@ -66,7 +66,7 @@ diabetes-prediction-ml-flask-app
 │   └── diabetes.csv
 │
 ├── Notebook
-│   └── model_training.ipynb
+│   └── Logistic_Regression_Diabetes.ipynb
 │
 ├── templates
 │   ├── home.html
