@@ -33,11 +33,12 @@ def predict_datapoint():
         DiabetesPedigreeFunction = float(request.form.get('DiabetesPedigreeFunction'))
         Age = float(request.form.get('Age'))
 
+        data = np.array([[Pregnancies,Glucose,BloodPressure,SkinThickness,
+                          Insulin,BMI,DiabetesPedigreeFunction,Age]])
+        scaled_data = scaler.transform(data)
+        prediction = model.predict(scaled_data)
 
-        new_data = scaler.transform([[Pregnancies, Glucose, BloodPressure, SkinThickness,	Insulin, BMI, DiabetesPedigreeFunction, Age]])
-        predict = model.predict(new_data)
-
-        if predict[0] == 1:
+        if prediction[0] == 1:
             result = "Diabetic"
         
         else:
@@ -46,8 +47,8 @@ def predict_datapoint():
         return render_template('single_prediction.html', result=result)
     
     else:
-        return render_template('home.html')
-    
+        return render_template('single_prediction.html')
+     
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
