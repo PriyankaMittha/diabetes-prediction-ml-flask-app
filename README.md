@@ -76,7 +76,6 @@ diabetes-prediction-ml-flask-app
 ├── requirements.txt
 └── README.md
 
----
 
 ## Running the Project Locally
 
