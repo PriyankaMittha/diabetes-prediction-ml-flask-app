@@ -55,7 +55,7 @@ Outcome
 7 Deployment with Flask
 
 ## Project Structure
-```text
+```
 diabetes-prediction-ml-flask-app
 │
 ├── Model
