@@ -102,6 +102,7 @@ http://127.0.0.1:5000
 ## Web Application
 
 The web interface allows users to input medical details and get a prediction whether the person is diabetic or not.
+Live Demo: [View Application](https://diabetes-prediction-ml-flask-app-4.onrender.com/)
 
 ## Future Improvements
 
